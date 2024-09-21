@@ -1,0 +1,14 @@
+{
+  "name": "llm_front",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "tsc && npm run copy-files",
+    "copy-files": "copyfiles -u 1 html/* dist",
+    "start": "npm run build && live-server dist"
+  },
+  "devDependencies": {
+    "typescript": "^4.0.0",
+    "copyfiles": "^2.4.1",
+    "live-server": "^1.2.1"
+  }
+}
