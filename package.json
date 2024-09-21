@@ -1,14 +1,17 @@
 {
-  "name": "llm_front",
+  "name": "mon-projet-typescript",
   "version": "1.0.0",
   "scripts": {
-    "build": "tsc && npm run copy-files",
-    "copy-files": "copyfiles -u 1 html/* dist",
-    "start": "npm run build && live-server dist"
+    "build": "tsc && node copyStaticFiles.js",
+    "start": "npm run build && live-server dist",
+    "watch-html-css": "nodemon --watch html --ext html,css --exec \"node copyStaticFiles.js\"",
+    "watch-ts": "tsc --watch",
+    "dev": "concurrently \"npm run watch-ts\" \"npm run watch-html-css\" \"live-server dist\""
   },
   "devDependencies": {
-    "typescript": "^4.0.0",
-    "copyfiles": "^2.4.1",
-    "live-server": "^1.2.1"
+    "concurrently": "^7.6.0",
+    "live-server": "^1.2.1",
+    "nodemon": "^2.0.15",
+    "typescript": "^4.0.0"
   }
 }

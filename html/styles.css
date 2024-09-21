@@ -5,6 +5,10 @@ body {
     padding: 20px;
 }
 
+h1 {
+    color: red;
+}
+
 #tweets-container {
     max-width: 600px;
     margin: 0 auto;
