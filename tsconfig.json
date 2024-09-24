@@ -1,12 +1,16 @@
 {
   "compilerOptions": {
     "target": "es6",
-    "module": "ESNext",
+    "module": "es6",
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
     "outDir": "./dist",
     "rootDir": "./src",
-    "strict": true,
-    "esModuleInterop": true
-  },
-  "include": ["src/**/*"],
-  "exclude": ["node_modules"]
+    "baseUrl": "./",
+    "paths": {
+      "*": ["src/*"] // Utilisation de chemins relatifs
+    }
+  }
 }

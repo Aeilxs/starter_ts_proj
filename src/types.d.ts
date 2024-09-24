@@ -4,3 +4,4 @@ export interface Tweet {
     avatarUrl: string;
     content: string;
 }
+
