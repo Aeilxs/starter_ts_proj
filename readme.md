@@ -1,10 +1,3 @@
-starter ts proj
-
-Je t'explique le projet désormais.
-
-J'ai un LLM. Il a été fine tune pour modifier les tweets haineux. Je souhaite faire une petite démo rapide mais efficace pour montrer les possibilités du LLM.
-
-J'ai donc mon html et mon css basique pour gérer des tweets.
 
 ```html
 <!DOCTYPE html>
